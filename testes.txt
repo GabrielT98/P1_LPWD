@@ -1,0 +1,122 @@
+Teste telefone
+
+GET
+[
+    {
+        "id": 4,
+        "celular": "24999123456",
+        "fixo": "2424882222"
+    },
+    {
+        "id": 5,
+        "celular": "24909123456",
+        "fixo": "242400222"
+    },
+    {
+        "id": 6,
+        "celular": "981070058",
+        "fixo": "24002254"
+    }
+]
+
+PUT
+http://localhost:8080/telefone/6
+
+{
+    "celular":"1111",
+    "fixo":"2222"
+}
+
+Delete
+http://localhost:8080/telefone/6
+Resultado
+[
+    {
+        "id": 4,
+        "celular": "24999123456",
+        "fixo": "2424882222"
+    },
+    {
+        "id": 5,
+        "celular": "24909123456",
+        "fixo": "242400222"
+    }
+]
+
+Teste Endereco
+
+POST
+
+
+{
+        "cep":"27770000",
+        "tipoLogradouro": "casa",
+        "logradouro": "Rua 1",
+        "numero":123,
+        "bairro":"abc",
+        "cidade":"aaa",
+        "estado":"eee",
+        "pais":"Brasil"
+}
+
+{
+        "cep":"27770000",
+        "tipoLogradouro": "Predio",
+        "logradouro": "Rua 2",
+        "numero":321,
+        "bairro":"abc",
+        "cidade":"aaa",
+        "estado":"eee",
+        "pais":"Brasil"
+}
+
+
+GET
+
+[
+    {
+        "id": 1,
+        "cep": "27770000",
+        "tipoLogradouro": "casa",
+        "logradouro": "Rua 1",
+        "numero": 123,
+        "bairro": "abc",
+        "cidade": "aaa",
+        "estado": "eee",
+        "pais": "Brasil"
+    },
+    {
+        "id": 2,
+        "cep": "27770000",
+        "tipoLogradouro": "Predio",
+        "logradouro": "Rua 2",
+        "numero": 321,
+        "bairro": "abc",
+        "cidade": "aaa",
+        "estado": "eee",
+        "pais": "Brasil"
+    }
+]
+
+
+PUT
+http://localhost:8080/endereco/1
+
+{
+        "cep":"27770000",
+        "tipoLogradouro": "sito",
+        "logradouro": "Rua 2",
+        "numero":321,
+        "bairro":"abc",
+        "cidade":"aaa",
+        "estado":"eee",
+        "pais":"Brasil"
+}
+
+
+Delete
+http://localhost:8080/endereco/1
+
+
+Pessoa
+POST
